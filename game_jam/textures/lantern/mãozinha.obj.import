@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drafc2l8rsgba"
+path="res://.godot/imported/mãozinha.obj-706d19c11bf5201fbecea1405ec9dffe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mãozinha.obj-706d19c11bf5201fbecea1405ec9dffe.mesh"]
+
+source_file="res://textures/lantern/mãozinha.obj"
+dest_files=["res://.godot/imported/mãozinha.obj-706d19c11bf5201fbecea1405ec9dffe.mesh", "res://.godot/imported/mãozinha.obj-706d19c11bf5201fbecea1405ec9dffe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

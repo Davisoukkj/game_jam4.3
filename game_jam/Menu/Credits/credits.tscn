@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://ovslf1pcwfan"]
+
+[ext_resource type="Script" path="res://Menu/Credits/credits.gd" id="1_hbxym"]
+[ext_resource type="FontFile" uid="uid://gbxk5s4beoji" path="res://Menu/The Screaming.ttf" id="1_uevp5"]
+[ext_resource type="Texture2D" uid="uid://dunn406lxqhnk" path="res://Menu/Destaque-Skibidi-Toilet-removebg-preview.png" id="2_atq00"]
+[ext_resource type="Texture2D" uid="uid://dkidjg8hfd3d4" path="res://Menu/preto.jpg" id="3_hj5hb"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hbxym")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.5
+offset_top = -120.0
+offset_right = 188.5
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.14902, 0.266667, 1)
+theme_override_fonts/font = ExtResource("1_uevp5")
+theme_override_font_sizes/font_size = 76
+text = "Davi Heinzen de Souza
+Gabriel Ferreira"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="preto" type="TextureRect" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 20.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_hj5hb")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 13.0
+offset_right = 123.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(1, 0.47451, 0.47451, 1)
+theme_override_fonts/font = ExtResource("1_uevp5")
+theme_override_font_sizes/font_size = 30
+text = "VOLTAR"
+
+[node name="Skibidi" type="TextureRect" parent="."]
+modulate = Color(0.360784, 0.360784, 0.360784, 1)
+self_modulate = Color(1, 1, 1, 0.384314)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 571.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_atq00")
+expand_mode = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
